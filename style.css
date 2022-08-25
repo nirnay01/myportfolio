@@ -322,8 +322,9 @@ header .navbar ul li a:hover{
     margin:2rem;
     margin-bottom: 4rem;
 }
+/* //1 */
 
-.contact .row form .box{
+.contact .row form .box-name{
     padding:1.5rem;
     margin:1rem 0;
     background:#3333;
@@ -333,13 +334,48 @@ header .navbar ul li a:hover{
     width:100%;
 }
 
-.contact .row form .box::placeholder{
+.contact .row form .box-name::placeholder{
     text-transform: capitalize;
 }
+/* 2 */
+.contact .row form .box-email{
+    padding:1.5rem;
+    margin:1rem 0;
+    background:#3333;
+    color:#fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+}
 
+.contact .row form .box-email::placeholder{
+    text-transform: capitalize;
+}
+/* 3 */
+.contact .row form .box-pr{
+    padding:1.5rem;
+    margin:1rem 0;
+    background:#3333;
+    color:#fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+}
+
+.contact .row form .box-pr::placeholder{
+    text-transform: capitalize;
+}
+/* end */
 .contact .row form .message{
     height: 15rem;
     resize: none;
+    padding:1.5rem;
+    margin:1rem 0;
+    background:#3333;
+    color:#fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
 }
 
 .contact .row .content .title{

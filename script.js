@@ -36,3 +36,30 @@ $(document).ready(function(){
   });
 
 });
+
+//Email js
+function validate() {
+  let name = document.querySelector('.box-name');
+  let email = document.querySelector('.box-email');
+  let msg = document.querySelector('.message');
+  let sendBtn = document.querySelector('.btn');
+
+  sendBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (name.value == "" || email.value == "" || msg.value == ""){
+      alert('ERROR');
+    } else{
+        sendmail(name.value, email.value, msg.value);
+        alert('Sucess');
+    }
+})
+}
+validate();
+
+function sendmail(name, email, msg){
+  emailjs.send("service_08ezat3","template_d6xdbwb",{
+    from_name: email,
+    to_name: name,
+    message: msg,
+    });
+}
