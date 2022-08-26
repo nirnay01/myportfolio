@@ -36,7 +36,7 @@ $(document).ready(function(){
   });
 
 });
-
+/*
 //Email js
 function validate() {
   let name = document.querySelector('.box-name');
@@ -63,3 +63,4 @@ function sendmail(name, email, msg){
     message: msg,
     });
 }
+*/
